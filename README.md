@@ -2,6 +2,8 @@
 
 A comprehensive visualization tool for comparing modern neural network activation functions and their Fourier Transform spectrum analysis.
 
+![Activation Functions Visualization](actispect.png)
+
 ## Overview
 
 This project provides an interactive PyQt5-based application that visualizes the top 10 most commonly used activation functions in deep learning along with their frequency domain characteristics through FFT (Fast Fourier Transform) analysis.
@@ -13,6 +15,12 @@ This project provides an interactive PyQt5-based application that visualizes the
 - **Frequency Analysis**: FFT spectrum analysis to understand the frequency characteristics of each function
 - **Interactive GUI**: Built with PyQt5 for smooth user experience
 - **Color-coded Display**: Each function has distinct colors and line styles for easy identification
+
+## Screenshot
+
+The application displays two main visualizations:
+- **Left Panel**: Activation functions comparison showing the characteristic curves of each function
+- **Right Panel**: FFT spectrum analysis revealing the frequency domain properties of each activation function
 
 ## Supported Activation Functions
 
@@ -46,6 +54,10 @@ cd SpectrumCompareOfActivationFumctions
 
 2. Install required dependencies:
 ```bash
+pip install -r requirements.txt
+```
+or
+```bash
 pip install numpy matplotlib PyQt5
 ```
 
@@ -55,6 +67,11 @@ Run the main application:
 
 ```bash
 python activation_visualizer.py
+```
+
+Alternative execution:
+```bash
+python run.py
 ```
 
 The application will open a window with two main panels:
@@ -86,6 +103,20 @@ This tool is useful for:
 - **Educational Purpose**: Teaching signal processing concepts in neural networks
 - **Function Selection**: Comparing functions for specific neural network architectures
 - **Frequency Analysis**: Understanding how different activations affect signal frequencies
+
+## File Structure
+
+```
+SpectrumCompareOfActivationFumctions/
+├── activation_visualizer.py    # Main application file
+├── run.py                      # Simple execution script
+├── requirements.txt            # Python dependencies
+├── README.md                   # Project documentation
+├── LICENSE                     # MIT License
+├── .gitignore                  # Git ignore rules
+├── DOCS.md                     # Detailed documentation
+└── actispect.png              # Application screenshot
+```
 
 ## Contributing
 
